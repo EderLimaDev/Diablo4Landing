@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">    
+
+    <title>Diablo IV</title>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="">
+        
+        <div id="menu">
+            <ul>
+              <li>História</li>
+              <li>Personagens</li>
+              <a  target="_blank" href="https://diablo4.blizzard.com/pt-br/"><li name="acessar">Acessar</li></a> 
+            </ul>
+          </div>
+
+        <i class='bx bx-menu' style='color:#b8b8b8'  ></i>
+    </header>
+    
+    <Main>
+        <h1>O Inferno o Aguarda!</h1>
+    </Main>
+
+
+
+    <footer>
+        <img class="battleLogo" src="images/battlenetLogo.png" alt="">
+          <div class="social-media">
+            <i class='bx bxl-facebook-circle' style='color:#555353'></i>
+            <i class='bx bxl-twitter' style='color:#555353'></i>
+            <i class='bx bxl-youtube' style='color:#555353' ></i>
+          </div>
+        <img class="blizLogo" src="images/blizardlogo.png" alt="">   
+    </footer>
+
+
+
+
+    <script>
+        var menu = document.getElementById('menu');
+        var menuBtn = document.querySelector('.bx-menu');
+    
+        menuBtn.addEventListener('click', function() {
+          menu.classList.toggle('open');
+        });
+      </script>
+    
+</body>
+</html>

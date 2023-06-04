@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgba(1,1,1, 0.3);
+    
+}
+
+header img {
+    padding-left: 15px;
+    width: 200px;
+}
+
+header i {
+    font-size: 48px;
+    position: absolute;
+    top: 20px; 
+    right: 30px;
+    cursor:pointer;
+}
+
+body {
+    user-select: none;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation-name: changeBg;
+    animation-duration: 6s;
+    background-image: url("images/diablobg.jpg"); 
+
+}
+
+main {
+    padding: 20px 10px;
+    text-align: center;
+    height: 20%;
+    
+}
+
+footer {
+ width:100%;
+ position: absolute;
+ bottom: 0;   
+}
+
+h1 {
+    background: -webkit-linear-gradient(#eee, #333);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 4rem;
+    animation:textExpand 3.8s cubic-bezier(.25,.46,.45,.94) both;
+
+}
+
+
+#menu ul a {
+    text-decoration: none;
+}
+.blizLogo {
+    width: 10%;
+    position:absolute;
+    bottom: 10px;
+    right: 10px;
+}   
+
+.battleLogo {
+    width: 20%;
+    position:absolute;
+    bottom: 10px;
+    left: 5px;
+}
+
+#menu {
+    width: 570px;
+    height: 90px;
+    background-color: #232126;
+    position: fixed;
+    right: -600px;
+    top: 0;
+    border-radius: 20px 0 0 20px;
+    transition: right 0.6s;
+}
+
+#menu.open {
+    right: 0;
+}
+
+#menu ul {
+    display: flex;
+    height:90px;
+    justify-content: center;
+    align-items:center;
+    list-style-type: none;
+    padding-right: 100px;
+    margin: 0;
+    
+}
+
+#menu ul li {
+    padding: 25px;
+    font-size: 1.7rem;
+    color: #fff;
+    cursor: pointer;
+
+}
+
+#menu ul li:hover {
+    background-color: #555;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border-radius: 20px;
+}
+
+#menu ul li:hover[name="acessar"] {
+    background-color: #b10e0e;
+}
+
+.social-media {
+    position: relative;
+    font-size: 2.5em;
+    margin: 0 42.5%;
+    cursor: pointer;
+}
+
+.social-media i {
+    padding: 0 10px;
+}
+
+@keyframes changeBg {
+    from {
+        background-image: url("images/diablo-4-wallpaper.jpg");
+        
+    }
+    to {
+        background-image: url("images/diablobg.jpg");
+    }
+}
+
+@keyframes textExpand {
+    0%{
+        letter-spacing:-.5em;transform:translateZ(-800px);filter:blur(12px);opacity:0
+    
+    }100% {
+        transform:translateZ(0);filter:blur(0);opacity:1
+    
+}}
